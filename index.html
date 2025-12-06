@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- FAVICON (Your logo.jpg in main folder) -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+
+  <title>Crave Corner</title>
+</head>
+
+<body>
+
+  <!-- HEADER / TOPBAR -->
+  <header class="topbar">
+    <h1>Crave Corner</h1>
+
+    <div class="search-wrap">
+      <input id="search" placeholder="Search restaurants or food..." />
+      <div id="dishResults" class="dish-results"></div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="heroSection" class="hero">
+    <div class="hero-overlay"></div>
+    <h1>Welcome to Crave Corner</h1>
+    <p>A Place Where Cravings Meet Taste..🍽️</p>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <section id="filters" class="filters">
+      <button data-cat="all" class="active">All</button>
+      <button data-cat="South Indian">South Indian</button>
+      <button data-cat="Snacks">Snacks</button>
+      <button data-cat="Dessert">Dessert</button>
+      <button data-cat="Food">Food</button>
+    </section>
+
+    <section id="list" class="grid"></section>
+  </main>
+
+  <!-- FLOATING CART BUTTON -->
+  <a href="cart.html" class="floating-cart" id="floatingCart">
+    Cart <span id="cartCount">0</span>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="data.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>
